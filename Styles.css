@@ -1,0 +1,342 @@
+/*Estilos de etiquetas html*/
+body{
+    background: #e0e0e0;
+    color: #323232;
+    font-family: sans-serif;
+}
+a{
+    color: #323232;
+    text-decoration: none;
+}
+/*Estilos de clases*/
+.main-conten{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.row-eventos{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    margin-top: 2rem; 
+}
+.title-event{
+    color: #323232;
+    font-size: 2.2em;
+    font-weight: 500;
+    margin: 2.5rem auto;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.fecha{
+    background-color: #01579b;
+    height: 100px;
+    margin: 0;
+    width: 10.9%;
+}
+.day{
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: 500;
+    line-height: .4;
+    margin: 0rem 1.2rem;
+    margin-top: 1.9rem;
+    text-align: center;
+}
+.month{
+    font-size: .3em !important;
+}
+.enlace-event{
+    width: 801px;
+}
+.event{
+    height: 100px;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #212121;
+    display: flex;
+    justify-content: space-around;
+}
+.event:hover, .event:focus{
+    background-color: #b4b4b4;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    transition: .3s ease all;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+}
+.event:hover >.btn-next, .event:focus >.btn-next{
+    cursor: pointer;
+}
+.event:hover >.btn-next::before,.event:focus >.btn-next::before{
+    background-color: #b4b4b4;
+    border: 1px solid #b4b4b4;
+}
+.item{
+    margin: auto 0;
+    height: 45px;
+    width: 245px;
+}
+.text-activ-event{
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: .9rem .5rem;
+}
+.text-event2{
+    margin: 0rem .5rem; 
+}
+.content-description{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0.5rem 0rem;
+}
+.reloj{
+    height: 50px;
+    width: 25px;
+ }
+.ico-clock{
+    font-size: 1.4em;
+    margin-top: .5rem;
+}
+.contenido-info{
+    width: 200px;
+}
+.text-activ-hours{
+    font-size: 1em;
+    font-weight: 600;
+}
+.txt-day{
+    font-size: .7em;
+    margin-bottom: 0.6rem;
+}
+
+.txt-convention-center{
+    font-size: .9em;
+    margin-top: .5rem;
+}
+.txt-convention-center2{
+    font-size: .9em;
+    margin-top: .9rem;
+}
+.line{
+    border-left: 1px solid #323232;
+    height: 50px;
+    margin: auto 0;
+    width: 1px;
+}
+.btn-next{
+    background-color: #c62828;
+    border-radius: 50%;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6em;
+    height: 40px;
+    margin: 10px;
+    overflow: hidden;
+    position: absolute;
+    padding: 0;
+    transition: all .2s ease-in-out;
+    vertical-align: middle;
+    width: 40px;
+    z-index: 1;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-border-radius: 50%;
+    webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15); 
+    right: 12rem;
+    margin-top: 2rem;
+}
+.ico-next{
+    margin: .45rem .9rem;
+}
+.row-btn{
+    display: flex;
+    text-align: center;
+}
+.btn-See-full-calendar{
+    background-color: #c62828;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 2.5rem auto;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+}
+.btn-See-full-calendar:hover{
+    background-color: #a31a1a;
+}
+
+/*Diseño responsive*/
+@media screen and (min-width: 1500px){
+    .btn-next {
+        right: 16rem;
+    }
+}
+@media screen and (max-width: 1024px){
+    .btn-next {
+        right: 1.1rem;
+        margin-top: 1.8rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .main-conten{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .fecha {
+        border: 1px solid #01579b;
+        height: 90px;        
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+    .day {
+        text-align: left;
+        margin-top: 2.4rem;
+    }
+    .enlace-event {
+        width: 100%;
+    }
+    .item {
+        height: 0px;
+        width: 91%;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .event {
+        flex-direction: column;
+        height: 225px;
+        width: 669px;  
+        align-items: center;  
+    }
+    .content-description {
+        justify-content: center;
+        margin: 0rem;
+        margin-top: .6rem;
+    }
+    .contenido-info {
+        width: 55%;
+    }
+    .ico-clock {
+        font-size: 1.6em;
+        margin-top: 0rem;
+    }
+    .text-activ-event {
+        font-size: 2.3em;
+        line-height: 1;
+    }
+    .txt-day {
+        font-size: 1.4em;
+        margin-bottom: 0.6rem;
+        display: inline-block;
+    }
+    .text-activ-hours {
+        font-size: 1.6em;
+        font-weight: 700;
+        display: inline-block;
+    }
+    .txt-convention-center {
+        font-size: 1.6em;
+        margin-top: -3rem;
+    }
+    .txt-convention-center2 {
+        font-size: 1.6em;
+        margin-top: -1.8rem;
+    }
+    .line{
+        display: none;
+    }
+    .btn-next {
+        height: 50px;
+        right: 1rem;
+        margin-top: -7.7rem;
+        width: 50px;
+    }
+    .ico-next {
+        margin: .67rem 1.3rem;
+    }
+    .btn-See-full-calendar {
+        font-size: 1.5em;
+        padding: 1.3rem 2rem;
+        width: 81%;
+    }
+
+    #content-description1{
+        margin-top: -1rem;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .item {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .row-eventos {
+        width: 94%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    .title-event {
+        font-size: 1.7em;
+        margin: 2rem auto;
+        margin-bottom: 0rem;
+    }
+    .fecha {
+        height: 65px;
+        margin-bottom: 1rem;
+    }
+    .day {
+        font-size: 2.2em;
+        margin-top: 1.9rem;
+    }
+    .event {
+        height: 130px;
+        width: 99%;
+    }
+    .text-activ-event {
+        font-size: 1.2em;
+        line-height: 22px;
+    }
+    .contenido-info {
+        width: 76%;
+    }
+    .text-activ-hours {
+        font-size: 1.1em;
+    }
+    .txt-day {
+        font-size: 1em;
+    }
+    .content-description {
+        margin-top: 0rem;
+    }
+    .txt-convention-center {
+        font-size: .9em;
+        margin-top: -1.2rem;
+    }
+    .txt-convention-center2 {
+        font-size: .9em;
+        margin-top: -1.2rem;
+    }
+    .ico-clock {
+        font-size: 1.2em;
+        margin-top: .2rem;
+    }
+    .btn-next {
+        margin-top: -4.7rem;
+        right: 0rem;
+    }
+
+    .btn-See-full-calendar {
+        font-size: 1em;
+        margin: 1rem auto;
+        padding: 1rem 2rem;
+        width: 75%;
+    }
+    #content-description1 {
+        margin-top: -.15rem;
+    }
+}
